@@ -118,6 +118,11 @@
 				pinctrl-names = "default";
 				pinctrl-0 = <&pinctrl_i2c1_default>;
 				status = "okay";
+
+				i2c_eeprom: i2c_eeprom@50 {
+					compatible = "atmel,24mac402";
+					reg = <0x50>;
+				};
 			};
 
 			pioA: gpio@fc038000 {
